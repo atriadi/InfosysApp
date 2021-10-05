@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\bower_components\**" />
+    <Compile Remove="wwwroot\dist\css\account\**" />
+    <Content Remove="wwwroot\bower_components\**" />
+    <Content Remove="wwwroot\dist\css\account\**" />
+    <EmbeddedResource Remove="wwwroot\bower_components\**" />
+    <EmbeddedResource Remove="wwwroot\dist\css\account\**" />
+    <None Remove="wwwroot\bower_components\**" />
+    <None Remove="wwwroot\dist\css\account\**" />
+    <TypeScriptCompile Remove="wwwroot\bower_components\**" />
+    <TypeScriptCompile Remove="wwwroot\dist\css\account\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\_ViewStart.cshtml" />
+    <Content Remove="wwwroot\favicon1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.4.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Rayab.ApplicationDbContext" Version="1.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\plugins\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infosys | New Applicant</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Section style -->
+    <link rel="stylesheet" href="../../dist/css/section.min.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Open Modal -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#Myimg').click(function () {
+                $('#Mymodal').modal('show')
+            });
+        });
+    </script>
+    <style>
+        #MyForm {
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 14px;
+            background: #ececec;
+        }
+
+        #Myimg {
+            margin: 0 auto;
+            background: #ccc;
+            border: 1px solid #000;
+            padding: 9px;
+        }
+    </style>
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <!-- User Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#" style="width: min-content;">
+                        <span class="hidden-xs">Triadi</span>
+                        <div style="margin-top: -30px;margin-left: 0px;">
+                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-1" alt="User Image" style="width: 100%;">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">Triadi</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../index3.html" class="brand-link">
+                <img src="../../dist/img/infosysLogo.jpg" alt="Infosys Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Infosys</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline mt-3 pb-3 mb-3 d-flex">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                        with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Dashboard">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dashboard v1</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Dashboardv2">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dashboard v2</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Dashboardv3">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dashboard v3</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Forms
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="ListApplicant">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>List Applicant</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-header">TOOLS</li>
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Calendar">
+                                <i class="nav-icon far fa-calendar-alt"></i>
+                                <p>
+                                    Calendar
+                                    <span class="badge badge-info right">2</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-header">MISCELLANEOUS</li>
+                        <li class="nav-item">
+                            <a href="../../iframe.html" class="nav-link">
+                                <i class="nav-icon fas fa-ellipsis-h"></i>
+                                <p>Tabbed IFrame Plugin</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="bg-primarynew">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>New Applicant</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right" style="background-color: transparent;margin-right: 30px;">
+                                <input class="form-control form-control-sidebar" type="search" placeholder="Applicant Name..." aria-label="Search">
+                            </ol>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+            </section>
+
+            <!-- Main content -->
+            <section class="content" style="margin-top: -40px;">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 250px">Jobs Role :</th>
+                                        <th style="width: 250px">Level :</th>
+                                        <th style="width: 250px">Status :</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    All Role
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Front End Developer</a>
+                                                    <a class="dropdown-item" href="#">Mobile Developer</a>
+                                                    <a class="dropdown-item" href="#">UI/UX Designer</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-light">All</button>
+                                                <button type="button" class="btn btn-light">Junior</button>
+                                                <button type="button" class="btn btn-light">Middle</button>
+                                                <button type="button" class="btn btn-light">Senior</button>
+                                                <button type="button" class="btn btn-light">Full Stack</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-light">All</button>
+                                                <button type="button" class="btn btn-light">Waiting</button>
+                                                <button type="button" class="btn btn-light">Test</button>
+                                                <button type="button" class="btn btn-light">Decline</button>
+                                                <button type="button" class="btn btn-light">Accepted</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container-fluid -->
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 250px">Candidate Name</th>
+                                        <th style="width: 250px">Jobs Role</th>
+                                        <th style="width: 150px">Level</th>
+                                        <th style="width: 150px">Location</th>
+                                        <th style="width: 150px">Screening Score</th>
+                                        <th style="width: 250px">Reviewer</th>
+                                        <th style="width: 40px">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div style="width: 20%;">
+                                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" style="width: 100%;" id="Myimg">
+                                                <!-- .modal -->
+                                                <div class="modal fade" id="Mymodal">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">Create Schedule</h4>
+                                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form id="MyForm" action="" method="post">
+                                                                    <label>Enter Name</label>
+                                                                    <input type="text" name="name" placeholder="Enter your name" /><br>
+                                                                    <label>Enter Email</label>
+                                                                    <input type="email" name="email" placeholder="Enter your email" /><br>
+                                                                    <input type="button" class="btn btn-default" name="submit" value="Submit" />
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <div style="margin-right: 320px;">
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                                </div>
+                                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Create</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span style="padding: 10px 10px 0px 10px;">Candidate Name</span>
+                                            </div>
+                                        </td>
+                                        <td>Update software</td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">Full-Stack</button>
+                                        </td>
+                                        <td><span>Surabaya</span></td>
+                                        <td>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </td>
+                                        <td><span>Triadi</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary">Accepted</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="width: 20%;">
+                                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" style="width: 100%;">
+                                                <span style="padding: 10px 10px 0px 10px;">Candidate Name</span>
+                                            </div>
+                                        </td>
+                                        <td>Clean database</td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary">Senior</button>
+                                        </td>
+                                        <td><span>Surabaya</span></td>
+                                        <td>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </td>
+                                        <td><span>Triadi</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary">Decline</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="width: 20%;">
+                                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" style="width: 100%;">
+                                                <span style="padding: 10px 10px 0px 10px;">Candidate Name</span>
+                                            </div>
+                                        </td>
+                                        <td>Cron job running</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning">Middle</button>
+                                        </td>
+                                        <td><span>Surabaya</span></td>
+                                        <td>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </td>
+                                        <td><span>-</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary">Waiting Review</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="width: 20%;">
+                                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" style="width: 100%;">
+                                                <span style="padding: 10px 10px 0px 10px;">Candidate Name</span>
+                                            </div>
+                                        </td>
+                                        <td>Fix and squish bugs</td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger">Junior</button>
+                                        </td>
+                                        <td><span>Surabaya</span></td>
+                                        <td>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </td>
+                                        <td><span>-</span></td>
+                                        <td>
+                                            <button type="button" class="btn btn-secondary">Test</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer clearfix">
+                            <ul class="pagination pagination-sm m-0 float-right">
+                                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>&copy; 2021 <a href="">Infosys</a></strong> All rights reserved. Terms Of Use And Privacy Policy
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 1.0.0
+            </div>
+        </footer>
+
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+</body>
+</html>

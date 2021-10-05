@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/account/css/bootstrap-login.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/account/js/jquery-3.3.1.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    @*Disable Browser Back Button*@
+    <script type="text/javascript" language="javascript">
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+    </script>
+</head>
+<body>
+
+    <form method="post" asp-controller="account" asp-action="login">
+        <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-4">
+            <div class="card card0 border-0">
+                <div class="row d-flex">
+                    <div class="col-lg-6">
+                        <img src="~/dist/img/logo.jpg" class="image" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card2 card border-0 px-4 py-5">
+                            <div class="row mb-4 px-3">
+                                <h1 class="mb-0 mr-4 mt-2">Log In</h1>
+                            </div>
+                            <div class="row mb-4 px-3">
+                                <h6 class="mb-0 mr-4 mt-2">Please login to your account to continue</h6>
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1">
+                                    <span class="mb-0 text-sm">Email Address</span>
+                                </label>
+                                <input type="text" name="username" class="mb-4" placeholder="Enter your email address" />
+                            </div>
+                            <div class="row px-3">
+                                <label class="mb-1">
+                                    <span class="mb-0 text-sm">Password</span>
+                                </label>
+                                <input type="password" name="password" placeholder="Enter your password" />
+                            </div>
+                            <div class="row mb-3 px-3">
+                            </div>
+                            <div class="row px-3 mb-4">
+                                <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input id="chk1" type="checkbox" name="chk" class="custom-control-input" />
+                                    <label for="chk1" class="custom-control-label text-sm">Remember me</label>
+                                </div>
+                                <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                            </div>
+                            <div class="row mb-3 px-3">
+                                <input type="submit" class="btn-blue text-center" value="Login" />
+                            </div>
+                            <div class="row mb-4 px-3"><small class="font-weight-bold">Don't have an account? <a class="text-danger ">Register</a></small> </div>
+                            @ViewBag.error
+                        </div>
+                        <div class="row px-5 mb-0">
+                            <small class="ml-4 ml-sm-5 m-2">Copyright &copy; 2021. All rights reserved. Terms of use And Privacy Policy</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
